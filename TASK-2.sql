@@ -60,7 +60,7 @@ customer from the "Orders" and "OrderDetails" tables. Allow users to input the c
 as a parameter.*/
 
 DELETE FROM OrderDetails 
-WHERE OrderID IN (SELECT OrderID FROM Orders WHERE CustomerID = @CustomerID);
+WHERE OrderID IN (SELECT OrderID FROM Orders WHERE CustomerID = 104);
 DELETE FROM Orders 
 WHERE CustomerID = 104;
 
